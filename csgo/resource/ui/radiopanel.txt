@@ -1,0 +1,228 @@
+"RadioPanel.txt"
+{
+
+//"SFUI_StandardRadio"
+//"SFUI_GroupRadio"	
+//"SFUI_ReportRadio"	
+	"Groups"
+	{
+		"standard"
+		{
+			"hotkey"	"1"
+			"title"	"KZ Menu"
+			"timeout"	"9999"
+
+			"Commands"
+			{
+				"roger"
+				{
+					"hotkey"	"1"
+					"label"	"Save Checkpoint"
+					"cmd"	"script saveP()"
+				}
+
+				"negative"
+				{
+					"hotkey"	"2"
+					"label"	"Load Checkpoint"
+					"cmd"	"script teleP()"
+				}
+
+				"needbackup"
+				{
+					"hotkey"	"3"
+					"label"	"Load Last Checkpoint"
+					"cmd"	"script teleP2()"
+				}
+
+				"holdpos"
+				{
+					"hotkey"	"4"
+					"label"	"Hide Hud" 
+					"cmd"	"script hideHud()"
+				}
+
+				"thanks"
+				{
+					"hotkey"	"5"
+					"label"	"Change FOV"
+					"cmd"	"script playerFOV()"
+				}
+
+				"cheer"
+				{
+					"hotkey"	"6"
+					"label"	"God Mode"
+					"cmd"	"god;script blank()"
+				}	
+
+				"sorry"
+				{
+					"hotkey"	"7"
+					"label"	"Reset"
+					"cmd"	"script kzReset()"
+				}	
+
+				"go"
+				{
+					"hotkey"	"8"
+					"label"	"Set Spawn"
+					"cmd"	"script setSpawn()"
+				}
+
+				"askfordrop"
+				{
+					"hotkey"	"9"
+					"label"	"Script SETUP"
+					"cmd"	"script_execute teleportScript; script SetupScript()"
+				}	
+			}
+		}
+
+		"training"
+		{
+			"hotkey"	"2"
+			"title"	"Callouts"
+			"timeout"	"10"
+			
+			"Commands"
+			{
+					"roger"
+				{
+					"hotkey"	"1"
+					"label"	"Roger"
+					"cmd"	"roger; snd_playsounds Buttons.snd14"
+				}
+				
+				"negative"
+				{
+					"hotkey"	"2"
+					"label"	"Negative"
+					"cmd"	"negative; snd_playsounds Buttons.snd14"
+				}
+				
+				"needbackup"
+				{
+					"hotkey"	"3"
+					"label"	"Follow Me"
+					"cmd"	"followme; snd_playsounds Buttons.snd14"
+				}
+				
+				"holdpos"
+				{
+					"hotkey"	"4"
+					"label"	"Hold Position"
+					"cmd"	"holdpos; snd_playsounds Buttons.snd14"
+				}
+				
+				"thanks"
+				{
+					"hotkey"	"5"
+					"label"	"Thanks"
+					"cmd"	"thanks; snd_playsounds Buttons.snd14"
+				}
+
+				"cheer"
+				{
+					"hotkey"	"6"
+					"label"	"Cheer!"
+					"cmd"	"cheer; snd_playsounds Buttons.snd14"
+				}	
+				
+				"sorry"
+				{
+					"hotkey"	"7"
+					"label"	"Sorry!"
+					"cmd"	"say_team Sorry!; snd_playsounds Buttons.snd14"
+				}	
+				
+					"go"
+				{
+					"hotkey"	"8"
+					"label"	"Go Go Go!"
+					"cmd"	"go; snd_playsounds Buttons.snd14"
+				}
+
+				"askfordrop"
+				{
+					"hotkey"	"9"
+					"label"	"Drop"
+					"cmd"	"needbackup; say_team Need a drop!; snd_playsounds Buttons.snd14"
+				}	
+			}
+		}
+
+		"radio"
+		{
+			"hotkey"	"3"
+			"title"	"Surf/Bhop Commands"
+			"timeout"	"1"
+			
+			"Commands"
+			{
+				"gamemode"
+				{
+					"hotkey"	"1"
+					"label"	"Surf Mode"
+					"cmd"	"sv_cheats 1; bot_kick; mp_autokick 0; mp_autoteambalance 0; mp_roundtime 60; mp_freezetime 0; sv_accelerate 5.5; mp_respawn_on_death_ct 1; mp_respawn_on_death_t 1; mp_solid_teammates 0; gods; mp_restartgame 1; mp_warmup_end; sv_airaccelerate 150;mp_roundtime_hostage 60;mp_roundtime_deployment 60; mp_roundtime_defuse 60; mp_roundtime 60"
+				}
+
+				"noclip"
+				{
+					"hotkey"	"2"
+					"label"	"Noclip"
+					"cmd"	"sv_cheats 1; noclip"
+				}
+
+				"Bhop"
+				{
+					"hotkey"	"3"
+					"label"	"Bunnyhop"
+					"cmd"	"sv_staminajumpcost 0; sv_staminalandcost 0; sv_staminamax 0; sv_staminarecoveryrate 0; sv_enablebunnyhopping 1; sv_autobunnyhopping 1"
+				}
+
+				"dropknife"
+				{
+					"hotkey"	"4"
+					"label"	"Drop Knife"
+					"cmd"	"mp_drop_knife_enable 1"
+				}
+
+				"airaccelerate"
+				{
+					"hotkey"	"5"
+					"label"	"Easy Surf"
+					"cmd"	"sv_airaccelerate 1000"
+				}
+
+				"alltalk"
+				{
+					"hotkey"	"6"
+					"label" "Alltalk"
+					"cmd"	"sv_talk_enemy_living 1;sv_talk_enemy_dead 1;sv_deadtalk 1;sv_full_alltalk 1"
+				}
+
+				"lowgravity"
+				{
+					"hotkey"	"7"
+					"label" "Low Gravity"
+					"cmd" 	"sv_gravity 400"
+				}	
+
+				"normalgravity"
+				{
+					"hotkey"	"8"
+					"label" "Normal Gravity"
+					"cmd"	"sv_gravity 800"
+				}	
+
+				"namedplayer"
+				{
+					"hotkey"	"9"
+					"label" "God Mode"
+					"cmd"	"sv_cheats 1; god"
+				}					
+			}
+		}
+	}
+}
