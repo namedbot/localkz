@@ -91,63 +91,63 @@
 				{
 					"hotkey"	"1"
 					"label"	"Roger"
-					"cmd"	"roger; snd_playsounds Buttons.snd14"
+					"cmd"	"roger"
 				}
 				
 				"negative"
 				{
 					"hotkey"	"2"
 					"label"	"Negative"
-					"cmd"	"negative; snd_playsounds Buttons.snd14"
+					"cmd"	"negative"
 				}
 				
 				"needbackup"
 				{
 					"hotkey"	"3"
 					"label"	"Follow Me"
-					"cmd"	"followme; snd_playsounds Buttons.snd14"
+					"cmd"	"followme"
 				}
 				
 				"holdpos"
 				{
 					"hotkey"	"4"
 					"label"	"Hold Position"
-					"cmd"	"holdpos; snd_playsounds Buttons.snd14"
+					"cmd"	"holdpos"
 				}
 				
 				"thanks"
 				{
 					"hotkey"	"5"
 					"label"	"Thanks"
-					"cmd"	"thanks; snd_playsounds Buttons.snd14"
+					"cmd"	"thanks"
 				}
 
 				"cheer"
 				{
 					"hotkey"	"6"
 					"label"	"Cheer!"
-					"cmd"	"cheer; snd_playsounds Buttons.snd14"
+					"cmd"	"cheer"
 				}	
 				
 				"sorry"
 				{
 					"hotkey"	"7"
 					"label"	"Sorry!"
-					"cmd"	"say_team Sorry!; snd_playsounds Buttons.snd14"
+					"cmd"	"say_team Sorry!"
 				}	
 				
 					"go"
 				{
 					"hotkey"	"8"
 					"label"	"Go Go Go!"
-					"cmd"	"go; snd_playsounds Buttons.snd14"
+					"cmd"	"go"
 				}
 
 				"askfordrop"
 				{
 					"hotkey"	"9"
 					"label"	"Drop"
-					"cmd"	"needbackup; say_team Need a drop!; snd_playsounds Buttons.snd14"
+					"cmd"	"needbackup; say_team Need a drop!"
 				}	
 			}
 		}
