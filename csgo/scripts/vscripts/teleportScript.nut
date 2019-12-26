@@ -66,6 +66,6 @@ function hideHud()
 
 function playerFOV()
 {
-	SendToConsole("toggle fov_cs_debug 0 130")
+	SendToConsole("toggle fov_cs_debug 0 110")
 	SendToConsole("radio")
 }
